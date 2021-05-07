@@ -2,4 +2,41 @@
 
 /* 回答はここに書いてね */
 
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* 不明点 */
+  /* [1] 下の行のwidthのコメントアウトを外す => 画面いっぱいだったテキストの範囲が900pxになっています。デベロッパーツールで確認してみましょう。 [2]は29行目。*/
+  /* width: 900px; */
+  /* [3] 下の行のmarginのコメントアウトを外す => この要素「.q1__content」が中央になる。ブロック要素（幅を指定しないと親要素の幅と同じになる）に親要素以下の幅を決めると決めた幅の外はmarginの扱いになるので、それを左右に振り分ける感じです。デベロッパーツールで確認すると左右にオレンジ（margin）のエリアが表示されます。 [4]は27行目。 */
+  /* margin: 0 auto; */
+.main_box {
+  width: 900px;
+  background-color: #eff3f4;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.blue_box {
+  background-color: #3274ae;
+  margin-left: 20px;
+  padding: 20px;
+  float: left;
+}
+
+.blue_box:first-child {
+  margin-left: 0;
+}
+
+.article_box {
+  width: 230px;
+  background-color: #eaf4ff;
+  border: 10px solid #022336;
+  box-sizing: border-box;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 16px;
+}
 /* 回答はここに書いてね */
