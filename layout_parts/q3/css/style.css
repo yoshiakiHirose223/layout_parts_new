@@ -1,5 +1,40 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.meal_table {
+  width: 100%;
+  /* table-layout: fixed;でセルの大きさを均一にする */
+  table-layout: fixed;
+  text-align: center;
+}
+
+.table_header {
+  background-color: #2244aa;
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.table_row:nth-child(2n) {
+  background-color: #ecf1f2;
+}
+
+.table_footer .table_row {
+  border-top: 2px dashed #000;
+}
+
+.table_data {
+  border: 1px solid #dedede;
+  padding: 10px 0;
+}
+
+.table_data:first-child {
+  background-color: #2244aa;
+  color: #fff;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+/* OR tfootを作成しないで、.table_row:last-childをtfootとして扱う（どちらがいいか）*/
 
 /* 回答はここに書いてね */
