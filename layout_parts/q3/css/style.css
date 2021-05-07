@@ -8,33 +8,31 @@
   text-align: center;
 }
 
-.table_header {
+.meal_table thead {
   background-color: #2244aa;
   color: #fff;
   font-size: 18px;
   line-height: 26px;
 }
 
-.table_row:nth-child(2n) {
+.meal_table tbody tr:nth-child(2n) {
   background-color: #ecf1f2;
 }
 
-.table_footer .table_row {
-  border-top: 2px dashed #000;
-}
-
-.table_data {
+.meal_table td,
+.meal_table th {
   border: 1px solid #dedede;
   padding: 10px 0;
 }
 
-.table_data:first-child {
+.meal_table td:first-child {
   background-color: #2244aa;
   color: #fff;
   font-size: 18px;
   line-height: 26px;
 }
 
-/* OR tfootを作成しないで、.table_row:last-childをtfootとして扱う（どちらがいいか）*/
-
+.meal_table tbody tr:last-child {
+  border-top: 2px dashed #000;
+}
 /* 回答はここに書いてね */
