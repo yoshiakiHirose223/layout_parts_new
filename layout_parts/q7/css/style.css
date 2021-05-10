@@ -2,4 +2,95 @@
 
 /* 回答はここに書いてね */
 
+/* Q7-1=============================================== */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.float_box {
+  width: 225px;
+  margin-left: 50px;
+  box-sizing: border-box;
+  float: left;
+  font-size: 16px;
+}
+
+.float_box:first-child {
+  margin-left: 0;
+}
+
+/* Q7-2=============================================== */
+.table {
+  display: table;
+}
+
+.table_cell {
+  width: 225px;
+  padding-left: 50px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.table_cell:first-child {
+  padding-left: 0;
+}
+
+/* Q7-3=============================================== */
+
+/* 子要素のwidth合計 === 親要素のwidth　みたいなとき
+子要素を横並びにすると謎の空白が生まれ、子要素のwidth合計 > 親要素のwidthになる
+これにより横並びが実現できないため親要素のfont-size:0;を指定
+参考：https://designerbrg.com/css_display_inlineblock/ */
+.inline_block_box {
+  font-size: 0;
+}
+
+.inline_block_content {
+  width: 225px;
+  margin-left: 50px;
+  font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.inline_block_content:first-child {
+  margin-left: 0;
+}
+
+/* Q7-4=============================================== */
+.flex_box {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.flex_content {
+  width: 225px;
+  box-sizing: border-box;
+}
+/* Q7-5=============================================== */
+.stable_flexible_box {
+  font-size: 0;
+}
+
+.stable_box {
+  width: 300px;
+  font-size: 16px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.flexible_box {
+  width: 100%;
+  font-size: 16px;
+  margin-left: -300px;
+  padding-left: 350px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+}
 /* 回答はここに書いてね */
