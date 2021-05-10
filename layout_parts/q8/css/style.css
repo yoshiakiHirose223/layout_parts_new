@@ -2,4 +2,78 @@
 
 /* 回答はここに書いてね */
 
+/* transition================================= */
+.hover_box {
+  text-align: center;
+}
+
+.image_text_box {
+  width: 500px;
+  height: 333px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.transition_image {
+  width: 100%;
+  transition-duration: 0.5s;
+}
+
+.transition_text_box {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.8));;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -100%;
+  left: 0;
+  opacity: 0;
+  transition-duration: 0.5s;
+}
+
+.transition_text_content {
+  color: #fff;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 20px;
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  word-break: break-all;
+}
+
+.image_text_box:hover .transition_text_box {
+  transition-duration: 0.5s;
+  bottom: 0;
+  opacity: 1;
+}
+
+.image_text_box:hover .transition_image {
+  transform: scale(1.5);
+  transition-duration: 0.5s;
+}
+
+/* animation================================= */
+.loading {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 10px solid #ecf1f2;
+  border-right-color: #00bcd4;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 /* 回答はここに書いてね */
