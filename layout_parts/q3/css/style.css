@@ -8,7 +8,13 @@
   text-align: center;
 }
 
-.meal_table thead {
+.meal_table td {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.meal_table thead,
+.meal_table td:first-child {
   background-color: #2244aa;
   color: #fff;
   font-size: 18px;
@@ -23,13 +29,6 @@
 .meal_table th {
   border: 1px solid #dedede;
   padding: 10px 0;
-}
-
-.meal_table td:first-child {
-  background-color: #2244aa;
-  color: #fff;
-  font-size: 18px;
-  line-height: 26px;
 }
 
 .meal_table tbody tr:last-child {
