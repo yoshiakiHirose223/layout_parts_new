@@ -8,27 +8,26 @@
   text-align: center;
 }
 
-.meal_table td {
-  font-size: 16px;
-  line-height: 22px;
+.meal_table td,
+.meal_table th {
+  border: 1px solid #dedede;
+  padding: 10px 0;
 }
 
-.meal_table thead,
-.meal_table td:first-child {
+.meal_table th {
   background-color: #2244aa;
   color: #fff;
   font-size: 18px;
   line-height: 26px;
 }
 
-.meal_table tbody tr:nth-child(2n) {
-  background-color: #ecf1f2;
+.meal_table td {
+  font-size: 16px;
+  line-height: 22px;
 }
 
-.meal_table td,
-.meal_table th {
-  border: 1px solid #dedede;
-  padding: 10px 0;
+.meal_table tbody tr:nth-child(2n) {
+  background-color: #ecf1f2;
 }
 
 .meal_table tbody tr:last-child {
