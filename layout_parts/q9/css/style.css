@@ -1,5 +1,35 @@
 @charset "UTF-8";
 
 /* 回答はここに書いてね */
+.bubble {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 5px solid #222;
+  border-radius: 30px;
+  position: relative;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.bubble::before {
+  content: "";
+  position: absolute;
+  bottom: -38px;
+  left: 30px;
+  border: 20px solid transparent;
+  border-top: 20px solid #fff;
+  z-index: 2;
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 25px;
+  border: 25px solid transparent;
+  border-top: 25px solid #222;
+  z-index: 1;
+}
 
 /* 回答はここに書いてね */
