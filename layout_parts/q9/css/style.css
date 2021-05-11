@@ -18,20 +18,18 @@
   position: absolute;
 }
 
-.bubble::before {
+.bubble::after {
   bottom: -38px;
   left: 30px;
   border: 20px solid transparent;
-  border-top: 20px solid #fff;
-  z-index: 2;
+  border-top-color:#fff;
 }
 
-.bubble::after {
+.bubble::before {
   bottom: -50px;
   left: 25px;
   border: 25px solid transparent;
-  border-top: 25px solid #222;
-  z-index: 1;
+  border-top-color:#222;
 }
 
 /* 回答はここに書いてね */
